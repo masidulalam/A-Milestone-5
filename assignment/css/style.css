@@ -1,0 +1,138 @@
+body {
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+    color: rgb(7, 192, 192);
+    display: flex;
+    justify-content: center;
+}
+
+#span {
+    color: goldenrod;
+}
+
+nav img {
+    height: 100%;
+    width: 80%;
+}
+
+article {
+    background-color: whitesmoke;
+    width: 50%;
+    height: 90%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.label-div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 22%;
+
+}
+
+.others-div {
+    background-color: rgb(224, 224, 224);
+    width: 50%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+
+
+.three {
+    margin-left: 6%;
+}
+
+.expenses {
+    text-align: center;
+}
+
+.calculate {
+    background-color: rgba(0, 140, 255, 0.753);
+    padding: 10px 55px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.two-enty {
+    background-color: rgb(224, 224, 224);
+    font-size: 16px;
+    padding: 7px 30px;
+}
+
+.save-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-btn {
+    background-color: rgba(0, 140, 255, 0.753);
+    color: white;
+    padding: 8px 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+}
+
+#kuri {
+    margin-left: 2%;
+}
+
+#persentage {
+    margin-left: 2%;
+}
+
+#save-but {
+    margin-left: 2%;
+}
+
+.input {
+    width: 35px;
+}
+
+.error {
+    color: red;
+}
+
+#expence-error {
+    margin-bottom: 0;
+    visibility: hidden;
+    text-align: center;
+    color: red;
+}
+
+#cal-btn {
+    margin-top: 0;
+}
+
+#balance-error {
+    visibility: hidden;
+    margin: 0;
+    text-align: center;
+    color: red;
+}
+
+.balance {
+    margin-bottom: 0;
+}

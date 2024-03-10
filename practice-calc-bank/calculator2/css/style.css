@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    font-family: sans-serif;
+}
+
+section {
+    height: 50%;
+    width: 40%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+}
+
+
+button {
+    cursor: pointer;
+}
+
+.div-headom {
+    margin-left: 25px;
+}
+
+.khali-div {
+    height: 10px;
+    text-align: right;
+    font-size: 25px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+.total {
+    /* height: 10px; */
+    text-align: right;
+    margin-right: 50px;
+    font-size: 25px;
+}
+
+.c {
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    font-size: 18px;
+    background-color: rgb(159, 157, 163);
+    color: white;
+}
+
+.zero {
+    width: 150px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.whitesmoke {
+    background-color: rgb(226, 223, 223);
+    color: black;
+}
+
+.last-line {
+    display: flex;
+    flex-grow: 2;
+}

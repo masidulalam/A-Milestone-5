@@ -1,0 +1,22 @@
+.pink-bg {
+  background-color: #feeae9;
+}
+.pink-font {
+  color: #ff136f;
+}
+.pink-btn {
+  background: linear-gradient(180deg, #ff589b -0.01%, #ff136f 99.99%);
+  color: white;
+  padding: 10px 28px;
+  border: none;
+}
+.yellow-color-watch {
+  background: linear-gradient(152.07deg, #ff9c35 1.47%, #ffd019 97.17%);
+  color: white;
+}
+.pink-color-watch {
+  background: linear-gradient(180deg, #ff589b -0.01%, #ff136f 99.99%);
+}
+.blue-color-watch {
+  background: linear-gradient(170.41deg, #7aacfc -10.89%, #3f07f8 92.77%);
+}

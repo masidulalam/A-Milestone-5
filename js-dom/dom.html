@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #second-title {
+            background-color: rgb(241, 177, 131);
+        } */
+        /* .blog {
+            border: 2px solid blueviolet;
+            margin: 5px;
+            padding: 7px;
+            border-radius: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Welcome to my blogsite</h1>
+        <ul id="blog-list">
+            <li>blog-1</li>
+            <li>blog-2</li>
+            <li>blog-3</li>
+            <li>blog-4</li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="blogs" class="blogs">
+            <header>
+                <h2></h2>
+            </header>
+            <article class="blog">
+                <h3 id="first-title">My Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus deserunt veniam ea quasi dolore
+                    quam possimus consectetur praesentium ducimus libero, voluptates enim dolores recusandae ex illum
+                    quod, atque iure culpa.</p>
+            </article>
+            <article id="second-blog" class="blog">
+                <h3 id="second-title">My Awesome Blog-2</h3>
+                <p>Vitae corporis, neque sapiente blanditiis suscipit aperiam nihil quidem delectus sequi est saepe
+                    impedit inventore quis voluptatem consequuntur minus eum adipisci asperiores corrupti maiores totam
+                    voluptates? A atque ad odio!</p>
+            </article>
+            <article class="blog">
+                <h3 id="third-title">My Awesome Blog-3</h3>
+                <p>Dignissimos, et aspernatur. Iste ipsam tempora consectetur aliquam suscipit eveniet, a ducimus, est,
+                    maiores officiis voluptatum! Eos vel at voluptatem nisi perferendis quisquam quidem, dolor doloribus
+                    modi. Sequi, iure sapiente.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const student = { name: 'masidul', age: 25, job: 'no', height: 6 }
+        // console.log(document);
+        const blogTitles = document.getElementsByTagName('h3');
+        // console.log(blogTitles);
+        for (const h3 of blogTitles) {
+            // console.log(h3.innerText);
+        };
+        const blogDetails = document.getElementsByTagName('p');
+        for (const p of blogDetails) {
+            // console.log(p.innerText)
+        }
+
+        // explore getElementsById
+        const secondTitle = document.getElementById('second-title');
+        // secondTitle.style.backgroundColor = 'chocolate';
+        secondTitle.style.backgroundColor = 'rgb(241, 177, 131)';
+
+        const thirdTitle = document.getElementById('third-title');
+        thirdTitle.style.textAlign = 'center';
+        thirdTitle.innerText = 'Title Updated by Js';
+        thirdTitle.style.backgroundColor = 'aqua';
+        thirdTitle.style.padding = '15px';
+
+        //create and add element by using javascript
+        //create thre element
+        const li = document.createElement('li');
+        li.innerText = 'blog-5';
+
+        //where to add
+        const ul = document.getElementById('blog-list');
+
+        // append new elemnt
+        ul.appendChild(li);
+
+        // add article 
+        const articles = document.createElement('article');
+        /* 
+        const h3 = document.createElement('h3');
+        h3.innerText = 'My Awesome Blog-5';
+        const p = document.createElement('p');
+        p.innerText = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iste suscipit ratione iusto molestias, tempore explicabo mollitia animi veniam libero, fuga officia obcaecati. Nostrum explicabo quas quaerat dolores itaque'
+        article.appendChild(h3);
+        article.appendChild(p);
+        */
+        articles.innerHTML = `
+        <h3>My Awesome Blog-5</h3>
+        <p>Dignissimos, gg aspernatur. Iste ipsam tempora consectetur aliquam suscipit eveniet, a ducimus, est,
+        maiores officiis voluptatum! Eos vel at voluptatem nisi perferendis quisquam quidem, dolor doloribus
+        modi. Sequi, iure sapiente.</p>
+        `
+
+
+
+        const blogSection = document.getElementById('blogs');
+        blogSection.appendChild(articles);
+
+        // set attribute 
+        // article.setAttribute("class", "blog");
+        // or 
+        articles.classList.add('blog');
+
+        //explore getElementByClass
+        const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
+            blog.style.border = '5px solid blueviolet';
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+            blog.style.borderRadius = '10px';
+        }
+    </script>
+</body>
+
+</html>

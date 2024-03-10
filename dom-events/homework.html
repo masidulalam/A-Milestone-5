@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <input id="first-input" type="text" placeholder="First Namme">
+    <button id="first-btn">First Btn </button><br><br>
+    <input id="second-input" type="text" placeholder="Second Namme">
+    <button id="second-btn">Second Btn</button><br><br>
+    <div id="name-container">
+        <h1>Full name list</h1>
+    </div>
+    <button id="full-name-btn">Sum</button>
+
+    <SCript>
+        document.getElementById('first-btn').addEventListener('click', function () {
+            const firstInput = document.getElementById('first-input');
+            console.log(firstInput.value);
+            firstInput.value = '';
+        })
+        document.getElementById('second-btn').addEventListener('click', function () {
+            const secondInput = document.getElementById('second-input');
+            console.log(secondInput.value);
+            secondInput.value = '';
+        })
+
+        document.getElementById('full-name-btn').addEventListener('click', function () {
+            const firstInput = document.getElementById('first-input');
+            console.log(typeof parseInt(firstInput.value))
+            const secondInput = document.getElementById('second-input');
+            const fullName = parseInt(firstInput.value) + parseInt(secondInput.value);
+            console.log(typeof fullName)
+            const p = document.createElement('p');
+            p.innerText = fullName
+            const nameContainer = document.getElementById('name-container');
+            nameContainer.appendChild(p)
+            firstInput.value = '';
+            secondInput.value = '';
+        })
+
+    </SCript>
+</body>
+
+</html>

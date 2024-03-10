@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Summery</title>
+</head>
+
+<body>
+    <h1 id="mouse-header">Mouse Event</h1>
+    <!-- <input onfocus="makeGreen()" id="email-feild" type="text" placeholder="Email Address"> -->
+    <!-- <input onchange="makeGreen()" id="email-feild" type="text" placeholder="Email Address"> -->
+    <!-- <input onblur="makeGreen()" id="email-feild" type="text" placeholder="Email Address"> -->
+    <input id="email-feild" type="text" placeholder="Email Address">
+    <button onclick="makeGreen()">Click Me: Green</button>
+    <script>
+        function makeGreen() {
+            document.body.style.backgroundColor = 'green'
+        }
+        document.getElementById('email-feild').addEventListener('keyup', function (event) {
+            console.log(event.target.value)
+        })
+        // document.getElementById('mouse-header').addEventListener('mousemove', function () {
+        //     console.log('mouse is moving giving me sursuri');
+        // })
+        // document.getElementById('mouse-header').addEventListener('mouseenter', function () {
+        //     console.log('mouse is entering');
+        // })
+        document.getElementById('mouse-header').addEventListener('mouseout', function () {
+            console.log('mouse is out');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/29c80aa2bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Money Master <span id="span"><i class="fas fa-hand-holding-usd"></i></span></h1>
+    </header>
+    <section class="flex">
+        <nav class="half-width">
+            <img src="images/Top-10-Brilliant-Money-Saving-Tips-to-Boost-Your-Finances (1).jpg" alt="">
+        </nav>
+        <article class="half-width">
+            <section>
+                <h3>Income</h3>
+                <div class="label-div">
+                    <label for="">Income:</label>
+                    <div class="two-enty"><span id="income">10000</span></div>
+                </div>
+                <h2 class="expenses">Expenses</h2>
+                <div class="label-div food">
+                    <label for="">Food:</label>
+                    <input class="input" id="food" type="text">
+                    <p id="food-error" class="error" hidden>* please enter valid food number</p>
+                </div>
+                <div class="label-div rent">
+                    <label for="Rent">Rent:</label>
+                    <input class="input" id="rent" type="text">
+                    <p id="rent-error" class="error" hidden>* please enter valid rent number</p>
+                </div>
+                <div class="label-div clothes">
+                    <label for="">Clothes:</label>
+                    <input class="input" id="clothes" type="text">
+                    <p id="clothes-error" class="error" hidden>* please enter valid clothes number</p>
+                </div>
+                <div>
+                    <p id="expence-error">*You crossed the income</p>
+                </div>
+                <div id="cal-btn" class="btn">
+                    <button id="calculate" class="calculate">Calculate</button>
+                </div>
+                <div>
+                    <h3>Total Expenses: <span id="expence">5500</span></h3>
+                    <h3 class="balance">Balance: <span id="balance">4500</span></h3>
+                    <p id="balance-error">*You dont have enough Money</p>
+                </div>
+
+                <div class="save-flex">
+                    <label for="" id="se">Save:</label>
+                    <input class="input" id="savings-percent" type="text">
+                    <label for="" id="persentage">%</label>
+                    <button class="save-btn" id="save-btn">Save</button>
+                </div>
+
+                <h3>Saving Amount: <span id="savings-amount">2000</span></h3>
+                <h3>Remaining Balance: <span id="remaining">2500</span></h3>
+            </section>
+        </article>
+    </section>
+    <script src="js/assign.js"></script>
+</body>
+
+</html>
